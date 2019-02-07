@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if (requestCode == requestCode) {
-            // Make sure the request was successful
+        if (requestCode == 1) {
+
             if (resultCode == RESULT_OK) {
                 ConstraintLayout layout = findViewById(R.id.activity1);
                 int result = data.getExtras().getInt("choice");
